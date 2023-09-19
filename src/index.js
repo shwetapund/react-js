@@ -1,16 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom/client';
+import Card from './component/Cards/Card';
+import bridal from './component/Cards/image/bridal.jpg';
+import simple from './component/Cards/image/simple.jpg';
+import aerebic from './component/Cards/image/aerebic.jpg';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <>
+    <div className='main-container'>
+
+  
+<Card image={bridal} heading={"Bridal Mehendi"} text={"Bridal mehendi is very beautiful."}/>
+
+<Card image={simple} heading={"Simple Mehendi"} text={"Simple mehendi is very beautiful."}/>
+<Card image={aerebic} heading={"Simple Mehendi"} text={"Simple mehendi is very beautiful."}/>
+
+</div>
+</>
+
 );
 
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
